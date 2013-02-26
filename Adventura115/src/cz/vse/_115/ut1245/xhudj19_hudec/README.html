@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{
+    margin: 0 auto;
+    font-family: Georgia, Palatino, serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 5px;
+}
+h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 16px;
+    padding: 0;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 22px;
+    margin: 20px 0 6px;
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+a:visited {
+    color: purple;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+    margin-left: 44px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+p, ul, ol {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+}
+pre {
+    padding: 0px 24px;
+    max-width: 800px;
+    white-space: pre-wrap;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    border-left:.5em solid #eee;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+hr {
+    width: 540px;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+}
+/* override default chrome & firefox settings */
+input:not([type="image"]), textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+label,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+select, input[type=file] {
+  height: 27px;
+  line-height: 27px;
+}
+textarea {
+  height: auto;
+}
+
+/* grey out placeholders */
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* buttons */
+button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #004b9a;
+  border-bottom-color: #003f81;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  color: #fff;
+  background-position: 0 -15px;
+  text-decoration: none;
+}
+button:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* CSS stylesheet is based on Kevin Burke's Markdown.css project (http://kevinburke.bitbucket.org/markdowncss) */
+</style>
+</head>
+<body>
+<h1>Zachraň Arthura Denta</h1>
+
+<ul>
+<li>Semestrální projekt k předmětu 4IT101 - Adventura</li>
+<li>Datum: 16.1.2013</li>
+<li>Autor: Jiří Hudec</li>
+</ul>
+
+<hr />
+
+<h2>Popis</h2>
+
+<p>Jedná se o adaptaci úvodních kapitol románu Douhlase Adamse Stopařův průvodce galaxií.<br />
+Hráč ovládá postavu Forda Prefecta, který se snaží zachránit svého přítele Arthura Denta z planety Země, která je odsouzena k demolici kvůli výstavbě hyperprostorové expresní dálnice. Jeho cílem je spolu s Arthurem nastoupit na jednu z Vogonských lodí dříve než bude Země zničena. Při tom musí překonat nejedno úskalí a překážku...</p>
+
+<hr />
+
+<h2>Průběh hry</h2>
+
+<p>Hra se snaží co nejvěrněji držet knižní předlohy, resp. jejího českého vydání. Její znalost výrazně usnadňuje její dokončení.<br />
+V poslední třetině hry jsou zavedena omezení na počet možných zadaných příkazů a uplnulý reálný čas. </p>
+
+<hr />
+
+<h2>Plán hry</h2>
+
+<p>Hráč začíná v prostoru <strong>Louka</strong><br />
+<img src="mapa.png" alt="plán hry" /></p>
+
+<hr />
+
+<h2>Herní příkazy</h2>
+
+<h3>Arthur</h3>
+
+<p><strong>Použití:</strong> arthur <em>název_povelu</em><br />
+<strong>Popis:</strong> Umožňuje dávat Arthurovi povely. Arthur vyková tyto příkazy: </p>
+
+<ul>
+<li><em>inventář</em> - vypíše obsah svého inventáře</li>
+<li><em>následuj</em> - začne následovat Forda při pohybu prostory</li>
+<li><em>stůj</em> - zastaví se v aktuálním prostoru</li>
+</ul>
+
+<h3>Jdi</h3>
+
+<p><strong>Použití:</strong> jdi <em>název_prostoru</em><br />
+<strong>Popis:</strong> Přesun postavy mezi herními prostory.</p>
+
+<h3>Konec</h3>
+
+<p><strong>Použití:</strong> konec<br />
+<strong>Popis:</strong> Předčasně ukončí hru.</p>
+
+<h3>Nápověda</h3>
+
+<p><strong>Použití:</strong> ?<br />
+<strong>Popis:</strong> Vypíše nápovědu.</p>
+
+<h3>Polož</h3>
+
+<p><strong>Použití:</strong> polož <em>předmět_z_tašky</em><br />
+<strong>Popis:</strong> Položí předmět z hráčovy tašky do aktuálního prostoru.</p>
+
+<h3>Použij</h3>
+
+<p><strong>Použití:</strong> použij <em>předmět_z_tašky</em><br />
+<strong>Popis:</strong> Použije vybraný předmět z hráčovy tašky. Použití některých předmětů je klíčové, jiné slouží jako nepovinné zpestření.</p>
+
+<h3>Promluv</h3>
+
+<p><strong>Použití:</strong> promluv <em>jméno_osoby</em><br />
+<strong>Popis:</strong> Zahájí rozhovor s postavou daného jména. Rozhovory jsou klíčovou součástí hry, nezbytnou pro její dokončení.</p>
+
+<h3>Předej</h3>
+
+<p><strong>Použití:</strong> předej <em>předmět_z_tašky</em> <em>jméno_osoby</em><br />
+<strong>Popis:</strong> Předá předmět z hráčovy tašky do inventáře osoby daného jména</p>
+
+<h3>Seber</h3>
+
+<p><strong>Použití:</strong> seber <em>předmět_z_prostoru</em><br />
+<strong>Popis:</strong> Sebere předmět z aktuálního prostoru a pokud je to možné, tak vloží do hráčovy tašky.</p>
+
+<h3>Vezmi</h3>
+
+<p><strong>Použití:</strong> vezmi <em>požadovaný_předmět_od_osoby</em> <em>jméno_osoby</em><br />
+<strong>Popis:</strong> Vezme předmět z inventáře dané osoby a pokud je to možné tak vloží do hráčovy tašky.  </p>
+
+<p>Poznámka k příkazům Předej a Vezmi: Některé předměty po vložení do inventáže osob už nejdou zpět vzít, nebo se v inventáži mohou objevovat nové předměty.</p>
+
+<hr />
+
+<h2>Nápověda pro průchod hrou</h2>
+
+<p>Pro dokončení hry je důležité provést tyto kroky:</p>
+
+<ul>
+<li>Najít Arthura a přesvědčit ho, aby Forda následoval</li>
+<li>Zajít s Arthurem do hospody na pivo</li>
+<li>Koupit buráky</li>
+<li>Obstarat Arthurovi ručník</li>
+<li>Odstopovat Vogonskou loď</li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
